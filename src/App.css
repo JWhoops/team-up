@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+@media only screen and (min-width: 768px) {
+
+    .navbar {
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+
+    /* navbar title*/
+    .navbar-light .navbar-brand {
+        color: white;
+        font-weight: bold;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    /* navbar button */
+    .navbar-light .navbar-nav .nav-link {
+        color: white;
+        border-left: 1px solid gray;
+        font-size: 20px;
+        padding: 18px 30px;
+        font-weight: bold;
+    }
+
+    /*container for right part of navbar*/
+    #navbar-right-container {
+        padding-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    /*username label*/
+    #username-lbl {
+        color: white;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    /*user avatar*/
+    #user-avatar {
+        display: inline-block;
+        border-radius: 100%;
+        background-color: white;
+        width: 50px;
+        height: 50px;
+        vertical-align: middle;
+    }
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* navbar title*/
+.navbar-light .navbar-brand {
+    color: white;
+    font-weight: bold;
+    padding-left: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* navbar button */
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+    padding-left: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.active {
+    background-color: white;
+    color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#navbar-right-container {
+    visibility: hidden;
+    display: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: black;
+    background-color: white;
 }
