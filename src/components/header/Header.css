@@ -68,6 +68,7 @@
     padding-left: 1rem;
 }
 
+/* navbar button active */
 .active {
     background-color: white;
     color: black;
@@ -78,6 +79,7 @@
     display: none;
 }
 
+/* navbar button hover */
 .navbar-light .navbar-nav .nav-link:hover {
     color: black;
     background-color: white;
