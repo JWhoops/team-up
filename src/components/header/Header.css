@@ -1,97 +1,124 @@
 @media only screen and (min-width: 768px) {
+  .navbar {
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
 
-    .navbar {
-        padding-bottom: 0px;
-        padding-top: 0px;
-    }
+  /* navbar title*/
+  .navbar-light .navbar-brand {
+    color: white;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .navbar-light .navbar-brand:hover {
+    color: white;
+  }
 
-    /* navbar title*/
-    .navbar-light .navbar-brand {
-        color: white;
-        font-weight: bold;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
+  /* navbar button */
+  .nav-btn-wrapper {
+    color: white;
+    border-left: 1px solid gray;
+    font-size: 20px;
+    padding: 18px 30px;
+    font-weight: bold;
+  }
 
-    /* navbar button */
-    .nav-btn-wrapper {
-        color: white;
-        border-left: 1px solid gray;
-        font-size: 20px;
-        padding: 18px 30px;
-        font-weight: bold;
-    }
+  .nav-btn-wrapper:hover {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+  }
+  .nav-btn-wrapper:active {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+  }
+  /*container for right part of navbar*/
+  #navbar-right-container {
+    padding-bottom: 0;
+    padding-bottom: 0;
+    padding-right: 1rem;
+    visibility: visible;
+  }
 
-    /*container for right part of navbar*/
-    #navbar-right-container {
-        padding-bottom: 0;
-        padding-bottom: 0;
-    }
+  /*username label*/
+  #username-lbl {
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
 
-    /*username label*/
-    #username-lbl {
-        color: white;
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 20px;
-        font-size: 18px;
-        font-weight: bold;
-    }
+  /*user avatar*/
+  #user-avatar {
+    display: inline-block;
+    border-radius: 100%;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+  }
 
-    /*user avatar*/
-    #user-avatar {
-        display: inline-block;
-        border-radius: 100%;
-        background-color: white;
-        width: 50px;
-        height: 50px;
-        vertical-align: middle;
-    }
+  /* navbar button */
+  .nav-btn-wrapper {
+    color: white;
+    font-weight: bold;
+  }
+}
 
-/* navbar button */
-.nav-btn-wrapper {
+@media only screen and (max-width: 768px) {
+  .navbar-light .navbar-brand:hover {
+    color: white;
+  }
+
+  .navbar-light .navbar-brand {
     color: white;
     font-weight: bold;
     padding-left: 1rem;
-}
-}
+  }
 
-.navbar {
+  .nav-btn-wrapper {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 7px;
+    padding-left: 1rem;
+  }
+
+  .nav-btn-wrapper:hover {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+  }
+
+  #username-lbl {
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 1rem;
+    color: white;
+    margin-top: 7px;
+    font-weight: bold;
+  }
+
+  .link:hover {
+    text-decoration: none;
+  }
+
+  #username-lbl:hover {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+  }
+
+  #user-avatar {
+    display: none;
+  }
+
+  .navbar {
     padding-left: 0;
     padding-right: 0;
-}
-
-/* navbar title*/
-.navbar-light .navbar-brand {
-    color: white;
-    font-weight: bold;
-    padding-left: 1rem;
-}
-
-/* navbar button */
-.nav-btn-wrapper {
-    color: white;
-    font-weight: bold;
-    padding-left: 1rem;
-}
-
-/* navbar button active */
-.active {
-    background-color: white;
-    color: black;
-}
-
-#navbar-right-container {
-    visibility: hidden;
-    display: none;
-}
-
-/* navbar button hover */
-.nav-btn-wrapper:hover {
-    color: black;
-    background-color: white;
-}
-
-.Navbar-btn:hover {
-    text-decoration: none;
+  }
 }
