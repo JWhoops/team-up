@@ -1,6 +1,7 @@
 import React from 'react';
 import './RecruitPage.css'
 import { Container, Button, Row, Col } from "react-bootstrap"
+import Card from "./components/Card"
 
 function RecruitPage() {
     return (
@@ -15,26 +16,26 @@ function RecruitPage() {
                 </Col>
             </Row>
             <Row className="card-row">
-                <Col lg={3} md={4} sm={6}>
-                    <div className="card"></div>
+                <Col lg={4} md={6} sm={6} xs={12}>
+                    <Card />
                 </Col>
-                <Col lg={3} md={4} sm={6}>
-                    <div className="card"></div>
+                <Col lg={4} md={6} sm={6} xs={12}>
+                    <Card />
                 </Col>
-                <Col lg={3} md={4} sm={6}>
-                    <div className="card"></div>
+                <Col lg={4} md={6} sm={6} xs={12}>
+                    <Card />
                 </Col>
-                <Col lg={3} md={4} sm={6}>
-                    <div className="card"></div>
+                <Col lg={4} md={6} sm={6} xs={12}>
+                    <Card />
                 </Col>
-                <Col lg={3} md={4} sm={6}>
-                    <div className="card"></div>
+                <Col lg={4} md={6} sm={6} xs={12}>
+                    <Card />
                 </Col>
-                <Col lg={3} md={4} sm={6}>
-                    <div className="card"></div>
+                <Col lg={4} md={6} sm={6} xs={12}>
+                    <Card />
                 </Col>
-                <Col lg={3} md={4} sm={6}>
-                    <div className="card"></div>
+                <Col lg={4} md={6} sm={6} xs={12}>
+                    <Card />
                 </Col>
             </Row>
         </Container>
