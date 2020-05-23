@@ -1,11 +1,22 @@
-import React from 'react';
-import './RecruitPage.css'
-import { Container, Button, Row, Col } from "react-bootstrap"
-import Card from "./components/Card"
+import React, { useEffect } from 'react';
+import './RecruitPage.css';
+import { Container, Button, Row, Col } from "react-bootstrap";
+import Card from "./components/Card";
+import { useSelector, useDispatch } from 'react-redux';
+import { showReqcruitingTeams } from '../../../actions/teamActions'
 
 function RecruitPage() {
+    const recruitingTeams = useSelector(state => state.recruitingTeams);
+    const { loading, recruiting_teams, error } = recruitingTeams;
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(showReqcruitingTeams());
+        return () => { }
+    })
     return (
         <Container>
+            <p>{recruiting_teams}</p>
             <Row className="option-container">
                 <Col lg={3}>
                     <Button variant="outline-dark">地点</Button>

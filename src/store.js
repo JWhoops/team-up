@@ -4,7 +4,7 @@ import { recruitingTeamsReducer } from './reducers/teamReducer'
 
 const initialState = { recruitList: {} };
 const reducer = combineReducers({
-    recruitList: recruitingTeamsReducer
+    recruitingTeams: recruitingTeamsReducer
 });
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
