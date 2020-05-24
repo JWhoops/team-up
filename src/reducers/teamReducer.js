@@ -1,6 +1,6 @@
 import { RECRUIT_TEAMS_REQUEST, RECRUIT_TEAMS_SUCCESS, RECRUIT_TEAMS_FAIL } from '../constants/teamConstant';
 
-function recruitingTeamsReducer(state = { recruiting_teams: "Empty" }, action) {
+function recruitingTeamsReducer(state = { recruiting_teams: [] }, action) {
     switch (action.type) {
         case RECRUIT_TEAMS_REQUEST:
             return { loading: true, recruiting_teams: [] };

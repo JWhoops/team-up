@@ -27,29 +27,13 @@ function RecruitPage() {
                 </Col>
             </Row>
             <Row className="card-row">
-                <Col lg={4} md={6} sm={6} xs={12}>
-                    <Card />
-                </Col>
-                <Col lg={4} md={6} sm={6} xs={12}>
-                    <Card />
-                </Col>
-                <Col lg={4} md={6} sm={6} xs={12}>
-                    <Card />
-                </Col>
-                <Col lg={4} md={6} sm={6} xs={12}>
-                    <Card />
-                </Col>
-                <Col lg={4} md={6} sm={6} xs={12}>
-                    <Card />
-                </Col>
-                <Col lg={4} md={6} sm={6} xs={12}>
-                    <Card />
-                </Col>
-                <Col lg={4} md={6} sm={6} xs={12}>
-                    <Card />
-                </Col>
+                {recruiting_teams.map(rt => (
+                    < Col key={rt._id} lg={4} md={6} sm={6} xs={12}>
+                        <Card team={rt} />
+                    </Col>
+                ))}
             </Row>
-        </Container>
+        </Container >
     )
 }
 

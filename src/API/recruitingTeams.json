@@ -1,45 +1,48 @@
 {
   "teams": [
     {
+      "_id": 1,
       "movie_title": "大头儿子",
       "location": "北京",
       "wanted_roles": [
         {
-          "role": "director",
+          "role": "导演",
           "number": 1
         },
         {
-          "role": "cameraman",
+          "role": "摄像",
           "number": 2
         }
       ],
       "description": "我这个剧本超级牛逼的!!!"
     },
     {
+      "_id": 2,
       "movie_title": "大头儿子",
       "location": "北京",
       "wanted_roles": [
         {
-          "role": "director",
+          "role": "导演",
           "number": 1
         },
         {
-          "role": "cameraman",
+          "role": "摄像",
           "number": 2
         }
       ],
       "description": "我这个剧本超级牛逼的!!!"
     },
     {
+      "_id": 3,
       "movie_title": "大头儿子",
       "location": "北京",
       "wanted_roles": [
         {
-          "role": "director",
+          "role": "导演",
           "number": 1
         },
         {
-          "role": "cameraman",
+          "role": "摄像",
           "number": 2
         }
       ],
