@@ -12,11 +12,10 @@ function RecruitPage() {
 
     useEffect(() => {
         dispatch(showReqcruitingTeams());
-        return () => { }
-    })
+    }, [])
+
     return (
         <Container>
-            <p>{recruiting_teams}</p>
             <Row className="option-container">
                 <Col lg={3}>
                     <Button variant="outline-dark">地点</Button>

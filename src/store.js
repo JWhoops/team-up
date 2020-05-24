@@ -2,7 +2,7 @@ import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from "redux-thunk";
 import { recruitingTeamsReducer } from './reducers/teamReducer'
 
-const initialState = { recruitList: {} };
+const initialState = {};
 const reducer = combineReducers({
     recruitingTeams: recruitingTeamsReducer
 });
