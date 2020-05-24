@@ -10,6 +10,7 @@ function RecruitPage() {
     const { loading, recruiting_teams, error } = recruitingTeams;
     const dispatch = useDispatch();
 
+    // componentDidMount???
     useEffect(() => {
         dispatch(showReqcruitingTeams());
     }, [])
