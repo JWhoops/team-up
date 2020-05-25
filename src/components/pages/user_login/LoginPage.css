@@ -21,10 +21,11 @@
 .input-form input {
     padding: 2%;
     width: 100%;
-    background-color: #f0f0f0;
-    border: none;
+    background-color: #FFFFFF;
+    border: solid;
+    border-width: 1px;
+    border-color: #8a8a8a;
     margin: 10px;
-    /* ^doesnt work? */
     align-items: center;
 }
 .button {
