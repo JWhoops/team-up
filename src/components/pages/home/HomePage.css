@@ -26,7 +26,8 @@
 .logo {
     align-items: center;
     text-align: center;
-    margin: 10%;
+    margin-top: 10%;
+    margin-bottom: 4%;
 }
 .logo h1{
     color: white;
@@ -37,6 +38,9 @@
 .logo p{
     color: white;
     font-size: 1.4rem;
+}
+.what{
+    margin-bottom: 3%;
 }
 .what h3, .about h3{
     color: white;

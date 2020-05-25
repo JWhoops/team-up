@@ -24,7 +24,7 @@
   .nav-btn-wrapper {
     color: white;
     border-left: 1px solid #1f1f1f;
-    font-size: 15px;
+    font-size: 17px;
     padding: 12px 25px;
     font-weight: bold;
   }
@@ -55,7 +55,7 @@
     display: inline-block;
     vertical-align: middle;
     margin-right: 20px;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
   }
 
@@ -90,7 +90,7 @@
   .nav-btn-wrapper {
     color: white;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 17px;
     margin-top: 7px;
     padding-left: 1rem;
   }
@@ -102,7 +102,7 @@
   }
 
   #username-lbl {
-    font-size: 15px;
+    font-size: 17px;
     text-decoration: none;
     padding-left: 1rem;
     color: white;
