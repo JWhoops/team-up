@@ -23,8 +23,7 @@
     width: 100%;
     background-color: #f0f0f0;
     border: none;
-    margin: 10px;
-    /* ^doesnt work? */
+    margin: 5px;
     align-items: center;
 }
 .button {
@@ -40,7 +39,7 @@
     background-color: gray;
     color: black;
 }
-.register {
+.login {
     width: 100%;
     align-items: baseline;
 }

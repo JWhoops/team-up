@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { Container, Button, Row, Col } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
 import './LoginPage.css';
 import { Link } from 'react-router-dom';
 
@@ -21,17 +21,20 @@ function LoginPage() {
                         type="text" 
                         placeholder="用户名"
                         value={username} 
-                        onChange={e => setUsername(e.target.username)} //?
+                        onChange={e => setUsername(e.target.value)} //?
                     />
                     <input 
                         type="password" 
                         placeholder="密码"
                         value={password}
-                        onChange={e => setPassword(e.target.password)}
+                        onChange={e => setPassword(e.target.value)}
                     />
                 </form>
-                <Button onClick={loginClicked}>登录</Button>
-                <Link to='/register'>注册</Link>
+                <Button className="button" onClick={loginClicked}>登录</Button>
+                <div className="register">
+                    <Link to='/register'>注册</Link>
+                </div>
+                
             </div>
         </Container>
     );
