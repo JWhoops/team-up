@@ -1,0 +1,20 @@
+{
+  "teams": [
+    {
+      "_id": 1,
+      "movie_title": "大头儿子与小头爸爸",
+      "location": "北京",
+      "progress": "企划阶段",
+      "name": "上海美术电影制片厂",
+      "description": "下个月就完成了!!!"
+    },
+    {
+      "_id": 2,
+      "movie_title": "A8历险记",
+      "location": "厦门",
+      "progress": "中期拍摄",
+      "name": "吴彦祖",
+      "description": "我们要西红柿炒鸡蛋!!!"
+    }
+  ]
+}

@@ -4,16 +4,16 @@ import { Button, Row, Col } from "react-bootstrap";
 import ProgressCard from "./components/ProgressCard";
 import PlusButton from "../../PlusButton";
 import { useSelector, useDispatch } from 'react-redux';
-import { showReqcruitingTeams } from '../../../actions/teamActions'
+import { showProgressTeams } from '../../../actions/teamActions'
 
 function ProgressPage() {
-    const recruitingTeams = useSelector(state => state.recruitingTeams);
-    const { loading, recruiting_teams, error } = recruitingTeams;
+    const progressTeams = useSelector(state => state.progressTeams);
+    const { loading, progress_teams, error } = progressTeams;
     const dispatch = useDispatch();
 
     // componentDidMount???
     useEffect(() => {
-        dispatch(showReqcruitingTeams());
+        dispatch(showProgressTeams());
     }, [])
 
     return (
@@ -27,7 +27,7 @@ function ProgressPage() {
                 </Col>
             </Row>
             <Row>
-                {recruiting_teams.map(rt => (
+                {progress_teams.map(rt => (
                     < Col key={rt._id} lg={4} md={6} sm={6} xs={12}>
                         <ProgressCard team={rt} />
                     </Col>
