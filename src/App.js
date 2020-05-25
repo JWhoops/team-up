@@ -16,7 +16,7 @@ function App() {
     <BrowserRouter>
       <Header />
       <Container>
-        <Route path="/home" exact={true} component={HomePage} />
+        <Route path="/" exact={true} component={HomePage} />
         <Route path="/recruit" exact={true} component={RecruitPage} />
         <Route path="/finish" exact={true} component={FinishPage} />
         <Route path="/progress" exact={true} component={ProgressPage} />

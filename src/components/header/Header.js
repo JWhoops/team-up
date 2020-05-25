@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <Navbar bg="dark" expand="md">
-      <Link to="/home">
+    <Navbar className="color-nav" expand="md">
+      <Link to="/">
         <Navbar.Brand>TEAM UP</Navbar.Brand>
       </Link>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -18,7 +18,7 @@ function Header() {
           <Link className="nav-btn-wrapper" to="/progress">
             进展
           </Link>
-          <Link className="nav-btn-wrapper" to="/finish">
+          <Link className="nav-btn-wrapper nav-btn-last" to="/finish">
             完成
           </Link>
         </Nav>

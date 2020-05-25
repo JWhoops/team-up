@@ -3,7 +3,12 @@
     padding-bottom: 0px;
     padding-top: 0px;
   }
-
+  /* .bg-dark {
+    background-color: black !important;
+  } */
+  .color-nav {
+    background-color: black;
+  }
   /* navbar title*/
   .navbar-light .navbar-brand {
     color: white;
@@ -18,12 +23,14 @@
   /* navbar button */
   .nav-btn-wrapper {
     color: white;
-    border-left: 1px solid gray;
-    font-size: 20px;
-    padding: 18px 30px;
+    border-left: 1px solid #1f1f1f;
+    font-size: 15px;
+    padding: 12px 25px;
     font-weight: bold;
   }
-
+  .nav-btn-wrapper.nav-btn-last {
+    border-right: 1px solid #1f1f1f;
+  }
   .nav-btn-wrapper:hover {
     text-decoration: none;
     background-color: white;
@@ -48,7 +55,7 @@
     display: inline-block;
     vertical-align: middle;
     margin-right: 20px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
   }
 
@@ -57,8 +64,8 @@
     display: inline-block;
     border-radius: 100%;
     background-color: white;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     vertical-align: middle;
   }
 
