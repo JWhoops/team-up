@@ -1,0 +1,14 @@
+#progress-container {
+  width: 100%;
+}
+
+.progress-option-container {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.progress-option-lbl {
+  display: inline;
+  vertical-align: middle;
+  margin-left: 15px;
+}
