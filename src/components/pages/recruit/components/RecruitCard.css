@@ -1,4 +1,4 @@
-.card {
+.recruit-card {
   padding-top: 10px;
   padding-left: 15px;
   background-color: gray;
@@ -10,11 +10,11 @@
   border-radius: 15px;
 }
 
-#title {
+.recruit-card-title {
   font-weight: bold;
 }
 
-#location {
+.recruit-card-location {
   margin-top: 5px;
   font-size: 15px;
 }

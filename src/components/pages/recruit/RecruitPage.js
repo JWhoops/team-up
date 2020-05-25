@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './RecruitPage.css';
 import { Container, Button, Row, Col } from "react-bootstrap";
-import Card from "./components/Card";
+import RecruitCard from "./components/RecruitCard";
 import PlusButton from "../../PlusButton";
 import { useSelector, useDispatch } from 'react-redux';
 import { showReqcruitingTeams } from '../../../actions/teamActions'
@@ -30,7 +30,7 @@ function RecruitPage() {
             <Row className="card-row">
                 {recruiting_teams.map(rt => (
                     < Col key={rt._id} lg={4} md={6} sm={6} xs={12}>
-                        <Card team={rt} />
+                        <RecruitCard team={rt} />
                     </Col>
                 ))}
             </Row>
