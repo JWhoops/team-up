@@ -17,9 +17,9 @@ function RegisterPage() {
     }
 
     return (
-        <Container className="container">
+        <div className="container">
             <div className="window">
-                <form className="input-form">
+                <form className="register-input-form">
                     <input 
                         type="email" 
                         placeholder="电子邮箱"
@@ -51,7 +51,7 @@ function RegisterPage() {
                 </div>
                 
             </div>
-        </Container>
+        </div>
     );
 }
 

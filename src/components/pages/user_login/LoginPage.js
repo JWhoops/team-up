@@ -14,16 +14,16 @@ function LoginPage() {
     }
 
     return (
-        <Container className="container">
+        <div className="container">
             <div className="window">
-                <form className="input-form">
-                    <input 
+                <form className="login-input-form">
+                    <input
                         type="text" 
                         placeholder="用户名"
                         value={username} 
                         onChange={e => setUsername(e.target.value)} //?
                     />
-                    <input 
+                    <input
                         type="password" 
                         placeholder="密码"
                         value={password}
@@ -36,7 +36,7 @@ function LoginPage() {
                 </div>
                 
             </div>
-        </Container>
+        </div>
     );
 }
 
