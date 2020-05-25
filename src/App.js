@@ -20,7 +20,7 @@ function App() {
       <Route path="/progress" exact={true} component={ProgressPage} />
       <Route path="/login" exact={true} component={LoginPage} />
       <Route path="/register" exact={true} component={RegisterPage} />
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 }

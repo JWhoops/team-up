@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './RecruitPage.css';
 import { Container, Button, Row, Col } from "react-bootstrap";
 import Card from "./components/Card";
+import PlusButton from "../../PlusButton";
 import { useSelector, useDispatch } from 'react-redux';
 import { showReqcruitingTeams } from '../../../actions/teamActions'
 
@@ -33,7 +34,8 @@ function RecruitPage() {
                     </Col>
                 ))}
             </Row>
-        </Container >
+            <PlusButton />
+        </Container>
     )
 }
 
