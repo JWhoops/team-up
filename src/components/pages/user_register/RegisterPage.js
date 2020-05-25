@@ -17,41 +17,40 @@ function RegisterPage() {
     }
 
     return (
-        <Container className="container">
+        <div id="register-container">
             <div className="window">
                 <form className="input-form">
-                    <input 
-                        type="email" 
+                    <input
+                        type="email"
                         placeholder="电子邮箱"
-                        value={email} 
+                        value={email}
                         onChange={e => setEmail(e.target.value)} // value or email?
                     />
-                    <input 
-                        type="text" 
+                    <input
+                        type="text"
                         placeholder="用户名"
-                        value={username} 
+                        value={username}
                         onChange={e => setUsername(e.target.value)}
                     />
-                    <input 
-                        type="password" 
+                    <input
+                        type="password"
                         placeholder="密码"
                         value={password}
                         onChange={e => setPassword(e.target.value)}
                     />
-                    <input 
-                        type="password" 
+                    <input
+                        type="password"
                         placeholder="确认密码"
                         value={confirmpassword}
                         onChange={e => setConfirmPassword(e.target.value)}
                     />
+                    <Button className="button" onClick={registerClicked}>注册</Button>
+                    <div className="login">
+                        <Link to='/login'>登录</Link>
+                    </div>
                 </form>
-                <Button className="button" onClick={registerClicked}>注册</Button>
-                <div className="login">
-                    <Link to='/login'>登录</Link>
-                </div>
-                
             </div>
-        </Container>
+        </div>
     );
 }
 

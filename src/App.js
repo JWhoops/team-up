@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route } from 'react-router-dom';
+import { Container } from "react-bootstrap";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import RecruitPage from './components/pages/recruit/RecruitPage';
@@ -14,13 +15,15 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      <Route path="/home" exact={true} component={HomePage} />
-      <Route path="/recruit" exact={true} component={RecruitPage} />
-      <Route path="/finish" exact={true} component={FinishPage} />
-      <Route path="/progress" exact={true} component={ProgressPage} />
-      <Route path="/login" exact={true} component={LoginPage} />
-      <Route path="/register" exact={true} component={RegisterPage} />
-      {/* <Footer /> */}
+      <Container>
+        <Route path="/home" exact={true} component={HomePage} />
+        <Route path="/recruit" exact={true} component={RecruitPage} />
+        <Route path="/finish" exact={true} component={FinishPage} />
+        <Route path="/progress" exact={true} component={ProgressPage} />
+        <Route path="/login" exact={true} component={LoginPage} />
+        <Route path="/register" exact={true} component={RegisterPage} />
+        {/* <Footer /> */}
+      </Container>
     </BrowserRouter>
   );
 }

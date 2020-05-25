@@ -1,46 +1,43 @@
-.container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#login-container {
+  padding-top: 100px;
 }
+
 .window {
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .input-form {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 .input-form input {
-    padding: 2%;
-    width: 100%;
-    background-color: #f0f0f0;
-    border: none;
-    margin: 10px;
-    /* ^doesnt work? */
-    align-items: center;
+  padding: 2%;
+  width: 100%;
+  background-color: #f0f0f0;
+  border: none;
+  margin: 10px;
+  /* ^doesnt work? */
+  align-items: center;
 }
 .button {
-    width: 100%;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 0;
-    margin: 10px;
-    align-items: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 0;
+  margin: 10px;
+  align-items: center;
 }
 .button:hover {
-    background-color: gray;
-    color: black;
+  background-color: gray;
+  color: black;
 }
 .register {
-    width: 100%;
-    align-items: baseline;
+  width: 100%;
+  align-items: baseline;
 }

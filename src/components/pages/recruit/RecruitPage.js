@@ -17,7 +17,7 @@ function RecruitPage() {
     }, [])
 
     return (
-        <Container>
+        <div id="recruit-container">
             <Row className="option-container">
                 <Col lg={3}>
                     <Button variant="outline-dark">地点</Button>
@@ -35,7 +35,7 @@ function RecruitPage() {
                 ))}
             </Row>
             <PlusButton />
-        </Container>
+        </div>
     )
 }
 
