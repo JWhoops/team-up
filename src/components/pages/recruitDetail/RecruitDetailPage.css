@@ -1,0 +1,63 @@
+#recruit-detail-container {
+  padding: 60px 60px 0 60px;
+}
+
+#recruit-detail-general-info {
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+#recruit-detail-general-info > * {
+  display: inline-block;
+}
+
+#general-info-head > * {
+  display: inline-block;
+}
+
+#recruit-detail-movie-title {
+  font-weight: bold;
+}
+
+#recruit-detail-expiration-time {
+  margin-left: 16px;
+  font-weight: bold;
+}
+
+#recruit-detail-follower {
+  margin-left: 16px;
+}
+
+#detail-leader-info-container {
+  display: flex;
+}
+
+#recruit-detail-location {
+  font-size: 22px;
+}
+
+#recruit-detail-leader {
+  font-size: 22px;
+  margin-left: 10px;
+}
+
+#general-info-head-right {
+  display: flex;
+  align-items: center;
+}
+
+#recruit-detail-favorite-btn {
+  margin-right: 40px;
+}
+
+#recruit-detail-join-btn {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 8px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
