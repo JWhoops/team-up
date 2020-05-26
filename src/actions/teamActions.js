@@ -1,6 +1,7 @@
 import {
     RECRUIT_TEAMS_REQUEST, RECRUIT_TEAMS_SUCCESS, RECRUIT_TEAMS_FAIL,
-    PROGRESS_TEAMS_REQUEST, PROGRESS_TEAMS_SUCCESS, PROGRESS_TEAMS_FAIL
+    PROGRESS_TEAMS_REQUEST, PROGRESS_TEAMS_SUCCESS, PROGRESS_TEAMS_FAIL,
+    FINISH_TEAMS_REQUEST, FINISH_TEAMS_SUCCESS, FINISH_TEAMS_FAIL,
 } from "../constants/teamConstant"
 
 const showReqcruitingTeams = (location = '') => async (dispatch) => {
@@ -25,4 +26,15 @@ const showProgressTeams = (location = '') => async (dispatch) => {
     }
 }
 
-export { showReqcruitingTeams, showProgressTeams };
+const showFinishTeams = (location = '') => async (dispatch) => {
+    try {
+        dispatch({ type: FINISH_TEAMS_REQUEST });
+        // mock API
+        var res = require("../API/finishTeams.json")
+        dispatch({ type: FINISH_TEAMS_SUCCESS, payload: res.teams });
+    } catch (error) {
+        dispatch({ type: FINISH_TEAMS_FAIL, payload: error.message });
+    }
+}
+
+export { showReqcruitingTeams, showProgressTeams, showFinishTeams };

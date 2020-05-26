@@ -1,0 +1,50 @@
+{
+    "teams": [
+        {
+          "_id": 1,
+          "movie_title": "太平洋银行：大抢劫",
+          "location": "Los Santos",
+          "progress": [
+            {
+              "log": "成功",
+              "time": "05-26-2020"
+            },
+            {
+              "log": "失败",
+              "time": "05-26-2020"
+            },
+            {
+              "log": "失败",
+              "time": "05-26-2020"
+            }
+          ],
+          "name": "ddhang",
+          "publish_info": "肏，终于做完了"
+        },
+        {
+            "_id": 1,
+            "movie_title": "越狱：大坠机",
+            "location": "Los Santos",
+            "progress": [
+              {
+                "log": "起飞时撞击",
+                "time": "05-26-2020"
+              },
+              {
+                "log": "起飞时坠落",
+                "time": "05-26-2020"
+              },
+              {
+                "log": "被战斗机爆菊",
+                "time": "05-26-2020"
+              },
+              {
+                "log": "被电线杆子挂到",
+                "time": "05-26-2020"
+              }
+            ],
+            "name": "ddhang",
+            "publish_info": "算了算了放弃了"
+          }
+    ]
+}
