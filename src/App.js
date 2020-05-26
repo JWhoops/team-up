@@ -10,6 +10,7 @@ import FinishPage from './components/pages/finish/FinishPage';
 import ProgressPage from './components/pages/progress/ProgressPage';
 import LoginPage from './components/pages/user_login/LoginPage';
 import RegisterPage from './components/pages/user_register/RegisterPage';
+import RecruitDetailPage from './components/pages/recruitDetail/RecruitDetailPage';
 
 function App() {
   return (
@@ -17,11 +18,12 @@ function App() {
       <Header />
       <Container>
         <Route path="/" exact={true} component={HomePage} />
-        <Route path="/recruit" exact={true} component={RecruitPage} />
+        <Route path="/recruit" component={RecruitPage} />
         <Route path="/finish" exact={true} component={FinishPage} />
         <Route path="/progress" exact={true} component={ProgressPage} />
         <Route path="/login" exact={true} component={LoginPage} />
         <Route path="/register" exact={true} component={RegisterPage} />
+        <Route path="/recruiting_teams/:id" component={RecruitDetailPage} />
         {/* <Footer /> */}
       </Container>
     </BrowserRouter>
