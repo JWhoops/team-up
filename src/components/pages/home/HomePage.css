@@ -1,0 +1,53 @@
+.bg {
+    background: url('../../../pictures/field_background.png');
+    /* background-size:contain;
+    background-position:top;
+    background: cover; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    position: fixed;
+    top: 20;
+    left: 0; 
+        
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+}
+#field-container {
+    padding-left: 15%;
+    padding-right: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.logo {
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 4%;
+}
+.logo h1{
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+}
+.logo p{
+    color: white;
+    font-size: 1.4rem;
+}
+.what{
+    margin-bottom: 3%;
+}
+.what h3, .about h3{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.what p, .about p{
+    color: white;
+    font-size: 1rem;
+}
