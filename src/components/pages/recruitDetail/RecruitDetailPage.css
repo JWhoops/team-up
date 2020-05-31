@@ -1,9 +1,8 @@
 #recruit-detail-container {
-  padding: 60px 60px 0 60px;
+  padding: 60px 60px 60px 60px;
 }
 
 #recruit-detail-general-info {
-  border-bottom: 1px solid black;
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
@@ -56,8 +55,59 @@
   background-color: black;
   color: white;
   font-weight: bold;
-  padding: 8px;
+  padding: 3px 8px 3px 8px;
   font-size: 20px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.recruit-detail-info-boxes {
+  border-bottom: 1px solid black;
+}
+
+.recruit-detail-sub-box {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.recruit-detail-sub-box > span {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.recruit-detail-member-container {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.recruit-detail-member-card {
+  margin-left: 30px;
+}
+
+.recruit-detail-member-avatar {
+  height: 70px;
+  width: 70px;
+  border: 1px solid gainsboro;
+  border-radius: 100%;
+}
+
+.recruit-detail-member-role {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.recruit-detail-comment{
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+#recruit-detail-comment-btn {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  width: 90px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 10px 0;
 }
