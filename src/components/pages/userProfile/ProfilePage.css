@@ -1,0 +1,99 @@
+.profile-page-container {
+    padding: 5% 20% 0% 20%;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-page-general-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: .5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black;
+}
+
+#profile-page-avatar {
+    display: inline-block;
+    border-radius: 100%;
+    background-color: rgb(252, 0, 0);
+    width: 5rem;
+    height: 5rem;
+    vertical-align: middle;
+    margin-bottom: .5rem;
+}
+
+#profile-page-username {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#profile-page-abilities {
+    margin-top: .6rem;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#profile-page-rating {
+    font-size: 1rem;
+    margin-bottom: .2rem;
+}
+
+#profile-page-message {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+#profile-page-message:hover {
+    color: yellowgreen;
+}
+
+.ability {
+    background-color: black;
+    color: white;
+    padding: .2rem .5rem .2rem .5rem;
+    font-size: 1rem;
+    border-radius: .2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.ability:last-child {
+    margin-right: 0;
+}
+
+#profile-page-projects-created h3, #profile-page-projects-joined h3, #profile-page-projects-watching h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.profile-page-projects-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-page-project {
+    padding: .5rem;
+    background-color: black;
+    color: white;
+    padding: .2rem .5rem .2rem .5rem;
+    font-size: 1rem;
+    border-radius: .2rem;
+    margin: .7rem .5rem .5rem .5rem;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.profile-page-project:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    border-radius: .2rem;
+    margin: .7rem .5rem .5rem .5rem;
+    flex-wrap: wrap;
+    cursor: pointer;
+}

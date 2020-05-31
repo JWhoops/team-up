@@ -11,6 +11,7 @@ import ProgressPage from './components/pages/progress/ProgressPage';
 import LoginPage from './components/pages/user_login/LoginPage';
 import RegisterPage from './components/pages/user_register/RegisterPage';
 import RecruitDetailPage from './components/pages/recruitDetail/RecruitDetailPage';
+import ProfilePage from './components/pages/userProfile/ProfilePage';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/login" exact={true} component={LoginPage} />
         <Route path="/register" exact={true} component={RegisterPage} />
         <Route path="/recruiting_teams/:id" component={RecruitDetailPage} />
+        <Route path="/user_profile/:id" component={ProfilePage} />
         {/* <Footer /> */}
       </Container>
     </BrowserRouter>
