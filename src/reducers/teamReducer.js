@@ -1,6 +1,7 @@
 import {
     RECRUIT_TEAMS_REQUEST, RECRUIT_TEAMS_SUCCESS, RECRUIT_TEAMS_FAIL,
-    PROGRESS_TEAMS_REQUEST, PROGRESS_TEAMS_SUCCESS, PROGRESS_TEAMS_FAIL
+    PROGRESS_TEAMS_REQUEST, PROGRESS_TEAMS_SUCCESS, PROGRESS_TEAMS_FAIL,
+    FINISH_TEAMS_REQUEST, FINISH_TEAMS_SUCCESS, FINISH_TEAMS_FAIL,
 } from '../constants/teamConstant';
 
 function recruitingTeamsReducer(state = { recruiting_teams: [] }, action) {
@@ -29,4 +30,17 @@ function progressTeamsReducer(state = { progress_teams: [] }, action) {
     }
 }
 
-export { recruitingTeamsReducer, progressTeamsReducer }
+function finishTeamsReducer(state = { finish_teams: [] },action) {
+    switch (action.type) {
+        case FINISH_TEAMS_REQUEST:
+            return { loading: true, finish_teams: [] };
+        case FINISH_TEAMS_SUCCESS:
+            return { loading: false, finish_teams: action.payload };
+        case FINISH_TEAMS_FAIL:
+            return { loading: false, error: action.payload };
+        default:
+            return state;
+    }
+}
+
+export { recruitingTeamsReducer, progressTeamsReducer, finishTeamsReducer }
