@@ -1,10 +1,11 @@
 import React from 'react';
 import "./Project.css";
+import {Link} from 'react-router-dom';
 
 function Project(props) {
-    return <div className="profile-page-project">
+    return <Link to="/team/{props.teamId}" className="profile-page-project">
             {props.projectName}
-    </div>
+    </Link>
 }
 
 export default Project;

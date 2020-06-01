@@ -25,23 +25,23 @@ function ProfilePage() {
             <div id="profile-page-projects-created">
                 <h3>创建的项目:</h3>
                 <div className="profile-page-projects-list">
-                    <Project projectName="英语口语入门"/>
-                    <Project projectName="四六级教程"/>
-                    <Project projectName="英语在吃鸡中的应用"/>
+                    <Project teamId="1" projectName="英语口语入门"/>
+                    <Project teamId="2" projectName="四六级教程"/>
+                    <Project teamId="3" projectName="英语在吃鸡中的应用"/>
                 </div>
             </div>
             <div id="profile-page-projects-joined">
                 <h3>加入的项目:</h3>
                 <div className="profile-page-projects-list">
-                    <Project projectName="次语言设计"/>
+                    <Project teamId="4" projectName="次语言设计"/>
                 </div>
             </div>
             <div id="profile-page-projects-watching">
                 <h3>关注的项目:</h3>
                 <div className="profile-page-projects-list">
-                    <Project projectName="现代语言设计"/>
-                    <Project projectName="郭语言"/>
-                    <Project projectName="Giao语言简史"/>
+                    <Project teamId="5" projectName="现代语言设计"/>
+                    <Project teamId="6" projectName="郭语言"/>
+                    <Project teamId="7" projectName="Giao语言简史"/>
                 </div>
             </div>
         </div>

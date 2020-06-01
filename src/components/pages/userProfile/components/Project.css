@@ -1,4 +1,5 @@
 .profile-page-project {
+    text-decoration: none;
     padding: .5rem;
     background-color: black;
     color: white;
@@ -11,6 +12,7 @@
 }
 
 .profile-page-project:hover {
+    text-decoration: none;
     background-color: white;
     border: 1px solid black;
     color: black;

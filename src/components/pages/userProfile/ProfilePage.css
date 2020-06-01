@@ -48,7 +48,8 @@
 }
 
 #profile-page-message:hover {
-    color: yellowgreen;
+    color: grey;
+    font-weight: bold;
 }
 
 .ability {

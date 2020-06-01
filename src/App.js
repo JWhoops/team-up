@@ -24,7 +24,8 @@ function App() {
         <Route path="/progress" exact={true} component={ProgressPage} />
         <Route path="/login" exact={true} component={LoginPage} />
         <Route path="/register" exact={true} component={RegisterPage} />
-        <Route path="/recruiting_teams/:id" component={RecruitDetailPage} />
+        {/* <Route path="/recruiting_teams/:id" component={RecruitDetailPage} /> */}
+        <Route path="/team/:id" component={RecruitDetailPage} />
         <Route path="/user_profile/:id" component={ProfilePage} />
         {/* <Footer /> */}
       </Container>
