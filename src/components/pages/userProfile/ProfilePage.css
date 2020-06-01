@@ -78,10 +78,10 @@
 }
 
 .profile-page-project {
-    padding: .5rem;
+    border: 1px solid black;
     background-color: black;
     color: white;
-    padding: .2rem .5rem .2rem .5rem;
+    padding: .2rem .4rem .2rem .4rem;
     font-size: 1rem;
     border-radius: .2rem;
     margin: .7rem .5rem .5rem .5rem;
@@ -97,4 +97,12 @@
     margin: .7rem .5rem .5rem .5rem;
     flex-wrap: wrap;
     cursor: pointer;
+}
+
+.profile-page-project:first-child, .profile-page-project:last-child {
+    margin: .7rem .0rem .5rem .0rem;
+}
+
+.profile-page-project:first-child:hover, .profile-page-project:last-child:hover {
+    margin: .7rem .0rem .5rem .0rem;
 }
