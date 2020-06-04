@@ -9,11 +9,11 @@ function RecruitDetailPage() {
                     <div id="general-info-head">
                         <h4 id="recruit-detail-movie-title">大头儿子</h4>
                         <h4 id="recruit-detail-expiration-time">(剩余7天)</h4>
-                        <h4 id="recruit-detail-follower">2关注</h4>
                     </div>
                     <div id="detail-leader-info-container">
                         <div id="recruit-detail-location">北京</div>
                         <div id="recruit-detail-leader">Fucking Idiot</div>
+                        <h4 id="recruit-detail-follower">2关注</h4>
                     </div>
                 </div>
                 <div id="general-info-head-right">

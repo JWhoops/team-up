@@ -18,7 +18,7 @@
 #profile-page-avatar {
     display: inline-block;
     border-radius: 100%;
-    background-color: rgb(252, 0, 0);
+    background-color: rgb(255, 0, 0);
     width: 5rem;
     height: 5rem;
     vertical-align: middle;
@@ -106,3 +106,41 @@
 .profile-page-project:first-child:hover, .profile-page-project:last-child:hover {
     margin: .7rem .0rem .5rem .0rem;
 }
+
+@media only screen and (max-width: 768px) {
+    /* container for all? */
+    .container {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .profile-page-container {
+        margin: 0;
+        padding: 0% 0% 0% 0%;
+        width: 100%;
+    }
+
+    .profile-page-general-info {
+        padding-top: 5%;
+        background-color: grey;
+        width: 100%;
+        padding-bottom: 4%;
+    }
+
+    #profile-page-rating {
+        padding: 0 20% 0 20%;
+    }
+
+    #profile-page-message {
+        padding: 0 20% 0 20%;
+    }
+
+    #profile-page-projects-created h3, #profile-page-projects-joined h3, #profile-page-projects-watching h3 {
+        padding: 0 20% 0 20%;
+    }
+
+    .profile-page-projects-list {
+        padding: 0 20% 0 20%;
+    }
+  }

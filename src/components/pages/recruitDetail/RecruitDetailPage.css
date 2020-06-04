@@ -25,10 +25,6 @@
   font-weight: bold;
 }
 
-#recruit-detail-follower {
-  margin-left: 16px;
-}
-
 #detail-leader-info-container {
   display: flex;
 }
@@ -40,6 +36,11 @@
 #recruit-detail-leader {
   font-size: 22px;
   margin-left: 10px;
+}
+
+#recruit-detail-follower {
+  font-size: 22px;
+  margin: 0px 0px 0px 10px;
 }
 
 #general-info-head-right {
@@ -110,4 +111,63 @@
   text-align: center;
   border-radius: 10px;
   margin: 10px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  #recruit-detail-container {
+    padding: 0;
+  }
+
+  .recruit-detail-info-boxes {
+    margin: 0 20% 0 20%
+  }
+
+  #recruit-detail-general-info.recruit-detail-info-boxes {
+    margin: 0;
+    color: white;
+  }
+
+  #recruit-detail-general-info {
+    padding: 5% 20% 3% 20%;
+    background-color: grey;
+    flex-direction: column;
+  }
+
+  #detail-leader-info-container {
+    margin-bottom: 8px;
+  }
+
+  #recruit-detail-location {
+    font-size: 1rem;
+  }
+
+  #recruit-detail-leader {
+    font-size: 1rem;
+  }
+
+  #recruit-detail-follower {
+    font-size: 1rem;
+  }
+
+  #recruit-detail-favorite-btn {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px 3px 8px;
+    font-size: 1rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+
+  #recruit-detail-join-btn {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px 3px 8px;
+    font-size: 1rem;
+    border-radius: .4rem;
+    cursor: pointer;
+  }
+
 }

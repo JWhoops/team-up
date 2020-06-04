@@ -77,6 +77,11 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+  .color-nav {
+    background-color: black;
+  }
+
   .navbar-light .navbar-brand:hover {
     color: white;
   }
@@ -127,5 +132,10 @@
   .navbar {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("../../pictures/menu-btn.png");
+    border-color: transparent;
   }
 }
