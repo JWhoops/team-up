@@ -22,6 +22,7 @@ function ProfilePage() {
             <div id="profile-page-message">
                 发送信息
             </div>
+            <div id="profile-page-message-border"></div>
             <div id="profile-page-projects-created">
                 <h3>创建的项目:</h3>
                 <div className="profile-page-projects-list">

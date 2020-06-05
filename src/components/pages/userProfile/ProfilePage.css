@@ -126,14 +126,17 @@
         background-color: grey;
         width: 100%;
         padding-bottom: 4%;
+        border-bottom: 1px solid black;
     }
 
     #profile-page-rating {
-        padding: 0 20% 0 20%;
+        margin: 0 20% 0 20%;
     }
 
     #profile-page-message {
-        padding: 0 20% 0 20%;
+        margin: 0 20% 1.5% 20%;
+        padding-bottom: 1%;
+        border-bottom: 1px solid black;
     }
 
     #profile-page-projects-created h3, #profile-page-projects-joined h3, #profile-page-projects-watching h3 {
@@ -142,5 +145,9 @@
 
     .profile-page-projects-list {
         padding: 0 20% 0 20%;
+    }
+
+    #profile-page-message-border {
+
     }
   }

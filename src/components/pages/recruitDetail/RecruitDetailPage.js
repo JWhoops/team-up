@@ -41,7 +41,7 @@ function RecruitDetailPage() {
                 </div>
             </div>
             <div className="recruit-detail-info-boxes ">
-                <h5>评论:</h5>
+                <h5 id="recruit-detail-comment-title">评论:</h5>
                 <p className="recruit-detail-comment" ><span className="recruit-detail-comment-username">DDDDD:</span> 拍的很好</p>
                 <p className="recruit-detail-comment" > <span className="recruit-detail-comment-username">我是香蕉: </span>666666666</p>
                 <p className="recruit-detail-comment" > <span className="recruit-detail-comment-username">水儿: </span>我是水牙</p>

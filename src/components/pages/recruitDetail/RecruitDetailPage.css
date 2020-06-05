@@ -170,4 +170,8 @@
     cursor: pointer;
   }
 
+  #recruit-detail-comment-title {
+    margin-top: 10px;
+  }
+
 }
