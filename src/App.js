@@ -12,6 +12,7 @@ import LoginPage from './components/pages/user_login/LoginPage';
 import RegisterPage from './components/pages/user_register/RegisterPage';
 import RecruitDetailPage from './components/pages/recruitDetail/RecruitDetailPage';
 import ProfilePage from './components/pages/userProfile/ProfilePage';
+import NewTeamPage from './components/pages/newTeam/NewTeamPage';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         {/* <Route path="/recruiting_teams/:id" component={RecruitDetailPage} /> */}
         <Route path="/team/:id" component={RecruitDetailPage} />
         <Route path="/user_profile/:id" component={ProfilePage} />
+        <Route path="/new_team" component={NewTeamPage} />
         {/* <Footer /> */}
       </Container>
     </BrowserRouter>

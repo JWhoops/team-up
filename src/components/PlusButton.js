@@ -1,9 +1,10 @@
 
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 function PlusButton() {
     return (
-        <div style={
+        <Link to="/new_team" style={
             {
                 backgroundColor: "black", color: "white",
                 borderRadius: "100%", width: "50px", height: "50px",
@@ -11,7 +12,7 @@ function PlusButton() {
                 fontWeight: "bold", cursor: "pointer", position: "absolute",
                 right: "50px", bottom: "50px"
             }}>+
-        </div>
+        </Link>
     )
 }
 

@@ -4,7 +4,9 @@ import { Container, Button, Row, Col } from "react-bootstrap";
 import RecruitCard from "./components/RecruitCard";
 import PlusButton from "../../PlusButton";
 import { useSelector, useDispatch } from 'react-redux';
-import { showReqcruitingTeams } from '../../../actions/teamActions'
+import { showReqcruitingTeams } from '../../../actions/teamActions';
+import { Redirect } from 'react-router';//
+import { render } from '@testing-library/react';
 
 function RecruitPage() {
     const recruitingTeams = useSelector(state => state.recruitingTeams);
