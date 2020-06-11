@@ -1,0 +1,44 @@
+{
+    "detail": {
+        "title": "大头儿子",
+        "expiration_time": 7,
+        "location": "北京",
+        "leader": "Fucking Idiot",
+        "follower": 12,
+        "description": "这个剧本炒鸡棒",
+        "jobs_needs": [
+            {
+                "number": 1,
+                "job": "导演"
+            },
+            {
+                "number": 2,
+                "job": "摄像"
+            }
+        ],
+        "members": [
+            {
+                "name": "shit",
+                "job": "演员"
+            },
+            {
+                "name": "pee",
+                "job": "编剧"
+            }
+        ],
+        "comments": [
+            {
+                "username": "DDDDD",
+                "comment": "拍的很好"
+            },
+            {
+                "username": "我是香蕉",
+                "comment": "66666还没拍完呢吧"
+            },
+            {
+                "username": "水儿",
+                "comment": "我是水牙"
+            }
+        ]
+    }
+}

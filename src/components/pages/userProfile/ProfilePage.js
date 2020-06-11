@@ -9,8 +9,6 @@ function ProfilePage() {
     const { loading, user_profile, error } = userProfile;
     const dispatch = useDispatch();
 
-    const a = "sb";
-
     useEffect(() => {
         dispatch(showUserProfile());
         console.log(user_profile);
