@@ -1,13 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './ProfilePage.css';
 import Project from './components/Project';
+import { useSelector, useDispatch } from 'react-redux';
+import { showUserProfile } from '../../../actions/userActions';
 
 function ProfilePage() {
+    const userProfile = useSelector(state => state.userProfile);
+    const { loading, user_profile, error } = userProfile;
+    const dispatch = useDispatch();
+
+    const a = "sb";
+
+    useEffect(() => {
+        dispatch(showUserProfile());
+        console.log(user_profile);
+    }, [])
+
     return (
         <div className="profile-page-container">
             <div className="profile-page-general-info">
                 <div id="profile-page-avatar"></div>
-                <div id="profile-page-username">英语太次郎</div>
+                <div id="profile-page-username">{user_profile.username}</div>
                 <div id="profile-page-abilities">
                     <div className="ability">导演</div>
                     <div className="ability">编剧</div>
@@ -17,7 +30,7 @@ function ProfilePage() {
             
             
             <div id="profile-page-rating">
-                评分：3.5
+                评分：{user_profile.rating}
             </div>
             <div id="profile-page-message">
                 发送信息

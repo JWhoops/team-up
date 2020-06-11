@@ -1,12 +1,14 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from "redux-thunk";
 import { recruitingTeamsReducer, progressTeamsReducer, finishTeamsReducer } from './reducers/teamReducer'
+import { userProfileReducer } from './reducers/userReducer'
 
 const initialState = {};
 const reducer = combineReducers({
     recruitingTeams: recruitingTeamsReducer,
     progressTeams: progressTeamsReducer,
     finishTeams: finishTeamsReducer,
+    userProfile: userProfileReducer,
 });
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
