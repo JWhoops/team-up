@@ -17,7 +17,6 @@ function recruitingTeamsReducer(state = { recruiting_teams: [] }, action) {
             return state;
     }
 }
-
 function progressTeamsReducer(state = { progress_teams: [] }, action) {
     switch (action.type) {
         case PROGRESS_TEAMS_REQUEST:
