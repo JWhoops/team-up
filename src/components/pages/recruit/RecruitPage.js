@@ -10,7 +10,7 @@ import { render } from '@testing-library/react';
 
 import ReactDom from 'react-dom';
 import 'react-area-linkage/dist/index.css';
-import { AreaSelect, AreaCascader } from 'react-area-linkage';
+import { AreaSelect, AreaCascader } from 'react-area-linkage'; //https://github.com/dwqs/react-area-linkage
 import { pca } from 'area-data';
 
 function RecruitPage() {
@@ -31,14 +31,14 @@ function RecruitPage() {
     return (
         <div id="recruit-container">
             <Row className="option-container">
-                <Col lg={4}>
-                    <AreaSelect data={pca} placeholders={shown?selected:['选择省','选择市']} onChange={val=>{setSelected(val)}}/>
+                <Col lg={3.5}>
+                    <AreaSelect size="small" data={pca} placeholders={shown?selected:['选择省','选择市']} onChange={val=>{setSelected(val)}}/>
                 </Col>
-                <Col lg={2}>
+                <Col lg={1}>
                     <Button id="recruit-btn" style={{ marginLeft: "10px" }} variant="outline-dark">职位</Button>
                 </Col>
                 <Col>
-                    <p className="option-lbl">目前为您展示XXX范围导演项目</p>
+    <p className="option-lbl">目前为您展示xxx范围导演项目</p>
                 </Col>
             </Row>
             <Row className="card-row">

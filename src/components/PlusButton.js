@@ -10,8 +10,10 @@ function PlusButton() {
                 borderRadius: "100%", width: "50px", height: "50px",
                 color: "white", fontSize: "30px", textAlign: "center",
                 fontWeight: "bold", cursor: "pointer", position: "absolute",
-                right: "50px", bottom: "50px"
-            }}>+
+                right: "50px", bottom: "50px",
+                // textDecoration: "blink"
+            }}
+            >+
         </Link>
     )
 }
