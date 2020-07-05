@@ -15,8 +15,7 @@ import { AreaSelect, AreaCascader } from 'react-area-linkage'; // https://github
 import { pca } from 'area-data';
 
 // jobs selection
-import MultiSelect from 'react-multi-select-component'; // https://reactjsexample.com/lightweight-multiple-selection-dropdown-component/
-import { Multiselect } from "multiselect-react-dropdown";
+import { Multiselect } from "multiselect-react-dropdown"; // https://www.npmjs.com/package/multiselect-react-dropdown
 
 function RecruitPage() {
     const options = [
@@ -36,8 +35,8 @@ function RecruitPage() {
           background: "black",
           "border-radius": ".2rem",
           "margin-bottom": ".75%",
-          "padding-left": ".3rem",
-          "padding-right": ".2rem",
+          "paddingLeft": ".3rem",
+          "paddingRight": ".2rem",
           height: "1.5rem"
         },
         searchBox: {
@@ -86,8 +85,19 @@ function RecruitPage() {
                 </Col>
                 <Col>
                     <Multiselect 
-                        options={options} 
-                        displayValue="label" 
+                        options={options}
+                        selectedValues={jobs_selected}
+                        onSelect={(item)=>{
+                            jobs_selected.push(item);
+                        }}
+                        onRemove={(item)=>{
+                            for(let i=0; i<jobs_selected.length; i++){
+                                if(item===jobs_selected[i]){
+                                    jobs_selected.splice(i,1);
+                                }
+                            }
+                        }}
+                        displayValue="label"
                         closeIcon="cancel"
                         style={job_style}
                     />
