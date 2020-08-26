@@ -4,6 +4,7 @@
       "_id": 1,
       "movie_title": "大头儿子",
       "location": "北京",
+      "name": "Fucking Idiot",
       "wanted_roles": [
         {
           "role": "导演",
@@ -20,6 +21,7 @@
       "_id": 2,
       "movie_title": "大头儿子",
       "location": "北京",
+      "name":"Fucking Idiot",
       "wanted_roles": [
         {
           "role": "导演",
@@ -36,6 +38,7 @@
       "_id": 3,
       "movie_title": "大头儿子",
       "location": "北京",
+      "name":"Fucking Idiot",
       "wanted_roles": [
         {
           "role": "导演",
