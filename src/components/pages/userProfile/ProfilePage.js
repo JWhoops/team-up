@@ -8,27 +8,34 @@ function ProfilePage() {
     const userProfile = useSelector(state => state.userProfile);
     const { loading, user_profile, error } = userProfile;
     const dispatch = useDispatch();
-
+    
     useEffect(() => {
         dispatch(showUserProfile());
-        console.log(user_profile);
+        // console.log(user_profile);
     }, [])
+
+    var abilities = []
+    if(user_profile.abilities) {
+        for(let i = 0; i < user_profile.abilities.length; i++) {
+            abilities.push(<div className="ability">{user_profile.abilities[i]}</div>)
+        }
+    }
 
     return (
         <div className="profile-page-container">
             <div className="profile-page-general-info">
                 <div id="profile-page-avatar"></div>
                 <div id="profile-page-username">{user_profile.username}</div>
-                <div id="profile-page-abilities">
+                {/* <div id="profile-page-abilities">
                     <div className="ability">导演</div>
                     <div className="ability">编剧</div>
                     <div className="ability">摄影</div>
-                </div>
+                </div> */}
+                {/* {console.log(user_profile.abilities.length)} */}
+                <div id="profile-page-abilities">{abilities}</div>
             </div>
-            
-            
             <div id="profile-page-rating">
-                评分：{user_profile.rating}
+                评分：
             </div>
             <div id="profile-page-message">
                 发送信息
