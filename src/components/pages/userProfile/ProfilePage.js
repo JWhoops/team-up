@@ -3,6 +3,7 @@ import './ProfilePage.css';
 import Project from './components/Project';
 import { useSelector, useDispatch } from 'react-redux';
 import { showUserProfile } from '../../../actions/userActions';
+import { USER_PROFILE_FAIL } from '../../../constants/userConstant';
 
 function ProfilePage() {
     const userProfile = useSelector(state => state.userProfile);
@@ -14,10 +15,34 @@ function ProfilePage() {
         // console.log(user_profile);
     }, [])
 
-    var abilities = []
+    const abilities = [];
     if(user_profile.abilities) {
         for(let i = 0; i < user_profile.abilities.length; i++) {
             abilities.push(<div className="ability">{user_profile.abilities[i]}</div>)
+        }
+    }
+
+    const projects_created = [];
+    if(user_profile.projects_created) {
+        for(let i = 0; i < user_profile.projects_created.length; i++) {
+            let proj = user_profile.projects_created[i];
+            projects_created.push(<Project teamId={proj.id} projectName={proj.ProjectName}/>)
+        }
+    }
+
+    const projects_joined = [];
+    if(user_profile.projects_joined) {
+        for(let i = 0; i < user_profile.projects_joined.length; i++) {
+            let proj = user_profile.projects_joined[i];
+            projects_joined.push(<Project teamId={proj.id} projectName={proj.ProjectName}/>)
+        }
+    }
+
+    const projects_watching = [];
+    if(user_profile.projects_watching) {
+        for(let i = 0; i < user_profile.projects_watching.length; i++) {
+            let proj = user_profile.projects_watching[i];
+            projects_watching.push(<Project teamId={proj.id} projectName={proj.ProjectName}/>)
         }
     }
 
@@ -26,16 +51,10 @@ function ProfilePage() {
             <div className="profile-page-general-info">
                 <div id="profile-page-avatar"></div>
                 <div id="profile-page-username">{user_profile.username}</div>
-                {/* <div id="profile-page-abilities">
-                    <div className="ability">导演</div>
-                    <div className="ability">编剧</div>
-                    <div className="ability">摄影</div>
-                </div> */}
-                {/* {console.log(user_profile.abilities.length)} */}
                 <div id="profile-page-abilities">{abilities}</div>
             </div>
             <div id="profile-page-rating">
-                评分：
+                评分：{user_profile.rating}
             </div>
             <div id="profile-page-message">
                 发送信息
@@ -44,23 +63,19 @@ function ProfilePage() {
             <div id="profile-page-projects-created">
                 <h3>创建的项目:</h3>
                 <div className="profile-page-projects-list">
-                    <Project teamId="1" projectName="英语口语入门"/>
-                    <Project teamId="2" projectName="四六级教程"/>
-                    <Project teamId="3" projectName="英语在吃鸡中的应用"/>
+                    {projects_created}
                 </div>
             </div>
             <div id="profile-page-projects-joined">
                 <h3>加入的项目:</h3>
                 <div className="profile-page-projects-list">
-                    <Project teamId="4" projectName="次语言设计"/>
+                    {projects_joined}
                 </div>
             </div>
             <div id="profile-page-projects-watching">
                 <h3>关注的项目:</h3>
                 <div className="profile-page-projects-list">
-                    <Project teamId="5" projectName="现代语言设计"/>
-                    <Project teamId="6" projectName="郭语言"/>
-                    <Project teamId="7" projectName="Giao语言简史"/>
+                    {projects_watching}
                 </div>
             </div>
         </div>

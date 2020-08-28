@@ -99,12 +99,12 @@
     cursor: pointer;
 }
 
-.profile-page-project:first-child, .profile-page-project:last-child {
+/* .profile-page-project:first-child, .profile-page-project:last-child {
     margin: .7rem .0rem .5rem .0rem;
-}
+} */
 
-.profile-page-project:first-child:hover, .profile-page-project:last-child:hover {
-    margin: .7rem .0rem .5rem .0rem;
+.profile-page-project:last-child {
+    margin-right: .0rem;
 }
 
 @media only screen and (max-width: 768px) {

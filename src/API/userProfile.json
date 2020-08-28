@@ -2,6 +2,26 @@
     "profile": {
         "abilities": ["导演","编剧","摄影"],
         "username": "英语太次郎",
-        "rating": 3.5
+        "rating": 3.5,
+        "projects_created": [
+            {
+                "id":1,
+                "ProjectName":"英语口语入门"},
+            {
+                "id":2,
+                "ProjectName":"英语在吃鸡中的应用"}
+        ],
+        "projects_joined": [
+            {
+                "id":3,
+                "ProjectName":"次语言设计"
+            }
+        ],
+        "projects_watching": [
+            {
+                "id":4,
+                "ProjectName":"现代语言设计"
+            }
+        ]
     }
 }
