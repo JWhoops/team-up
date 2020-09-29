@@ -1,0 +1,3 @@
+License can only be used for non-commercial OS development
+
+The use of the software is limited to licensed users and has no right to transfer the software to any third party.
